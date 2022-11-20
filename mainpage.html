@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/mainpage.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Smartparking</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav collapsible">
+        <a class="logo" href="#"
+          ><img class="logo__image" src="/images/car-logo.svg" alt="" />
+        </a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Parkings</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-right hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading" data-aos="fade-right">Smart Parking</h1>
+          <p class="hero__tagline">
+            Find the nearest parking in your location with ease 
+          </p>
+          <a href="login.html" class="btn btn--accent btn--long">Sign Now</a>
+        </header>
+        <img
+          class="hero__image"
+          data-aos="fade-in"
+          src="/images/car.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="block container block--domin" data-aos="fade-up">
+      <header class="block__header">
+        <h2>Where AM I</h2>
+        <p>
+          Check which parking is nearest to you
+        </p>
+      </header>
+      <div class="input-group">
+        <input class="input" type="text" placeholder="Access Location" />
+        <button class="btn btn--accent" onclick="window.location.href = 'map.html';">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use></svg
+          >Automatic
+        </button>
+      </div>
+    </section>
+
+    <section class="block container block-plans" data-aos="fade-up">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">CUSAT Parking</h3>
+              <span class="card__price">5rs</span>
+              <span class="card__price-cycle">/hour</span>
+              <span class="badge badge--secondary badge--small">10% Off</span>
+              <span class="plan__description">Secure and Safe</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">1 day 100rs</li>
+                <li class="list__item">1 week 600rs</li>
+                <li class="list__item">1 month 2000rs</li>
+              </ul>
+              <button  class="btn btn--outline btn--block"
+
+               onclick="window.location.href = 'Booking.html';">Book Now</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Edapply Parking</h3>
+              <span class="card__price">10rs</span>
+              <span class="card__price-cycle">/hour</span>
+              <span class="badge badge--secondary badge--small">20% Off</span>
+              <span class="plan__description">Safe And Secure </span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">1 day 150rs</li>
+                <li class="list__item">1 week 700rs</li>
+                <li class="list__item">1 month 2500rs</li>
+              </ul>
+
+              <button class="btn btn--outline btn--block"
+              onclick="window.location.href = 'Booking.html';">Book Now</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Ernakulam Parking</h3>
+              <span class="card__price">5rs</span>
+              <span class="card__price-cycle">/hour</span>
+              <span class="badge badge--secondary badge--small">5% Off</span>
+              <span class="plan__description">Safe And Secure</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">1 day 100rs</li>
+                <li class="list__item">1 week 600rs</li>
+                <li class="list__item">1 month 2000rs</li>
+              </ul>
+              <button class="btn btn--outline btn--block"
+              onclick="window.location.href = 'Booking.html';">Book Now</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2>Smart Parking Technology</h2>
+        <p>
+          With Smart Parking Bring
+          Effeciency to transportation
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="featured__heading">Reduce Traffic</h3>
+          <p>
+            With Smart Parking reduce the traffic and safe time 
+          </p>
+          <a class="Link-arrow" href="#">read more</a>
+        </div>
+        <picture data-aos="fade-left">
+          <img class="feature__image" src="/images/traffic.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="featured__heading">Safe And Secure</h3>
+          <p>
+            With Smart Parking no need to worry about
+            theifs and damages to your vehicle
+          </p>
+          <a class="Link-arrow" href="#">Read more</a>
+        </div>
+        <picture data-aos="fade-left">
+          <img class="feature__image" src="/images/car-theif.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="zoom-in">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="featured__heading">Easy to Find Slot</h3>
+          <p>
+            With Smart Parking no need to worry
+            about finding parking slot. here you can reserve before...
+          </p>
+          <a class="Link-arrow" href="#">Read more</a>
+        </div>
+        <picture data-aos="zoom-out">
+          <img class="feature__image" src="/images/parking.jpg" alt="" />
+        </picture>
+      </article>
+    </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2 class="showcase__header">What is our Showcase?</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <img
+          class="block--showcase_image"
+          data-aos="fade-right"
+          src="/images/pic.jpg"
+          alt=""
+        />
+        <ul class="list">
+          <li data-aos="slide-up">
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#easy"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Best Locations</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Expedita, delectus.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li data-aos="slide-up">
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Lowest Rate</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Expedita, delectus.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li data-aos="slide-up">
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">24/hour open</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Expedita, delectus.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="block" data-aos="fade-up">
+      <header class="block__header">
+        <h2>What customers says</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+          pariatur!
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img src="images/hadi.png" alt="hadi" />
+              <span class="icon-container icon-container-accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia mollitia eaque, unde, incidunt atque maxime culpa rem dignissimos alias error! Voluptate, maxime quae?
+                 Illo illum atque dignissimos nesciunt voluptates.
+              </p>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Hadi</h3>
+                  <p class="quote__company">IOT Project Member</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="callout callout--primary">
+      <div class="grid grid--1x2">
+        <div class="callout__content">
+          <h3 class="callout__heading">Get Started</h3>
+          <p>
+            Book your Parking Slot Now Online and get direction easily
+          </p>
+        </div>
+        <a href="#" class="btn btn--accent btn--long">Get Started</a>
+      </div>
+    </div>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__section">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__Heading footer__heading">Item 1</h2>
+            <svg class="icon icon--white icon--chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">parkings</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__Heading footer__heading">Item 2</h2>
+            <svg class="icon icon--white icon--chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">CUSAT</a></li>
+              <li><a href="#">Edappally</a></li>
+              <li><a href="#">Ernakulam</a></li>
+              <li><a href="#">Aluva</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__Heading footer__heading">Item 3</h2>
+            <svg class="icon icon--white icon--chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Signup</a></li>
+              <li><a href="#">terms</a></li>
+              <li><a href="#">policy</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__Heading footer__heading">Item 3</h2>
+            <svg class="icon icon--white icon--chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">licence</a></li>
+              <li><a href="#">Regulation</a></li>
+              <li><a href="#">Rates</a></li>
+              <li><a href="#">Contract</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <img class="logo__image" src="/images/car-logo.svg" alt="" />
+          <p class="footer_copyright">Copyright 2021 Hadi Khedri</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
